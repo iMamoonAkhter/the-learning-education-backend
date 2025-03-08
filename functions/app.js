@@ -20,7 +20,7 @@ app.use(express.static("public"))
 app.use(cookieParser())
 
 //routes import
-import userRouter from "./routes/user.routes.js"
+import userRouter from "../src/routes/user.routes.js"
 import ServerlessHttp from "serverless-http";
 
 //routes decalartion
