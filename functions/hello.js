@@ -1,4 +1,3 @@
-const { status } = require("express/lib/response")
 
 exports.handler = async (event, context)=>{
     return {
