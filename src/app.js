@@ -21,10 +21,7 @@ app.use(cookieParser())
 
 //routes import
 import userRouter from "../src/routes/user.routes.js"
-import ServerlessHttp from "serverless-http";
 
 //routes decalartion
 app.use("/api/v1/users", userRouter)
 export { app }
-
-export const handler = ServerlessHttp(app);
