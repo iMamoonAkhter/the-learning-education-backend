@@ -24,4 +24,7 @@ import userRouter from "../src/routes/user.routes.js"
 
 //routes decalartion
 app.use("/api/v1/users", userRouter)
+app.use("/", (req, res) => {
+    res.send("Hello from nodemailer")
+})
 export default app;
