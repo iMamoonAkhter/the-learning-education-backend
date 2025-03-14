@@ -5,11 +5,13 @@
   "type": "module",
   "main": "index.js",
   "engines": {
-        "node": "18.x"
+        "node": ">=18.x"
     },
   "scripts": {
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'No build step required for this backend project'",
+     "start": "node src/index.js"
   },
   "keywords": [
     "javascript"
