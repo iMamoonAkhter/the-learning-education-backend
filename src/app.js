@@ -37,13 +37,5 @@ app.use("/api/v1/users", userRouter)
 app.use("/", (req, res) => {
     res.send("Hello from nodemailer")
 })
-function ignoreFavicon(req, res, next) {
-    if (req.originalUrl.includes('favicon.ico')) {
-      res.status(204).end()
-    }
-    next();
-  }
-
-
-app.use(ignoreFavicon)
+app.get('/favicon.ico', (req, res) => res.status(204).end())
 export default app;
