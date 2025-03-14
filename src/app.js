@@ -19,6 +19,16 @@ app.use(express.static("public"))
 
 app.use(cookieParser())
 
+app.get('/set-cookie', (req, res) => {
+    res.cookie('test_cookie', 'cookie_value', {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'none',
+      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+    });
+    res.send('Cookie set!');
+  });
+
 //routes import
 import userRouter from "../src/routes/user.routes.js"
 
