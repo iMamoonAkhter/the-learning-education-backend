@@ -37,4 +37,5 @@ app.use("/api/v1/users", userRouter)
 app.use("/", (req, res) => {
     res.send("Hello from nodemailer")
 })
+app.get('/favicon.ico', (req, res) => res.status(204).end())
 export default app;
