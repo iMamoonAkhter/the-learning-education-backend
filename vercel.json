@@ -2,7 +2,7 @@
     "rewrites": [
       {
         "source": "/(.*)",
-        "dest": "/src/"
+        "destination": "/src/"
       }
     ],
     "buildCommand": "npm run build",
