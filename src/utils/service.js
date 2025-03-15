@@ -3,10 +3,6 @@ import { asyncHandler } from "./asynchandler.js";
 import nodemailer from "nodemailer";
 
 
-
-
-
-
 //Nodemailer
 
 const sendEmail = async (options) => {
