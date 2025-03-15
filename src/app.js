@@ -34,7 +34,7 @@ import userRouter from "../src/routes/user.routes.js"
 
 //routes decalartion
 app.use("/api/v1/users", userRouter)
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
     res.send("Hello from nodemailer")
 })
 app.get('/favicon.ico', (req, res) => res.status(204).end())
